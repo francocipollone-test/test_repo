@@ -10,7 +10,7 @@ on:
 
 jobs:
   add-to-project:
-    uses: francocipollone-test/.github/.github/triage_reusable.yml@main
+    uses: francocipollone-test/.github/.github/workflows/triage_reusable.yml@main
     with:
       number_of_project: "1"
     secrets:
