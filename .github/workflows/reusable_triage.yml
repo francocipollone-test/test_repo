@@ -1,0 +1,17 @@
+name: Reusable Triage - Core Development
+
+on:
+  issues:
+    types:
+      - opened
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    uses: francocipollone-test/.github/.github/triage_reusable.yml@main
+    with:
+      number_of_project: "1"
+    secrets:
+      github-token: ${{ secrets.ADD_TO_ACTION_PAT }}
